@@ -1,4 +1,4 @@
-## Base Terraform Example
+## Terraform Base Example
 
 This is a base project for deploy a basic infrastructure with terraform for AWS
 
