@@ -1,0 +1,9 @@
+variable "key_name" {}
+variable "public_subnets" {}
+variable "vpc_id" {}
+variable "name" {}
+variable "aws_ami_name" {}
+variable "aws_ami_virtualization_type" {}
+variable "aws_ami_owner" {}
+variable "instance_type" {}
+variable "public_ip_address" {}

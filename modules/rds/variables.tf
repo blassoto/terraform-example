@@ -1,0 +1,11 @@
+variable "password" {}
+variable "subnet_group_name" {}
+variable "security_group_ids" {}
+variable "allocated_storage" {}
+variable "engine" {}
+variable "engine_version" {}
+variable "instance_class" {}
+variable "identifier" {}
+variable "name" {}
+variable "username" {}
+variable "storage_type" {}

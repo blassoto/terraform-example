@@ -1,0 +1,52 @@
+# AWS Keys
+aws_access_key          = ""
+aws_secret_key          = ""
+
+# EC2 Keys
+key_name                = ""
+private_key_path        = ""
+
+# Github
+github_organization     = "blassoto"
+github_repository       = "test-app"
+github_branch           = "master"
+github_token            = ""
+
+# VPC Config
+public_subnets          = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+private_subnets         = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
+network_address_space   = "10.0.0.0/16"
+
+# Rails Config
+secret_key_base         = ""
+app_name                = "base-app"
+
+# Beanstalk configuration
+# https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-supported.html
+abs_solution_stack_name     = "64bit Amazon Linux 2018.03 v2.12.10 running Ruby 2.6 (Puma)"
+abs_instance_type           = "t2.micro" # Usar una instancia que tenga como minimo 1 GB o mas
+abs_autoscaling_min_size    = 1
+abs_autoscaling_max_size    = 1
+abs_domain_name             = ""
+
+# RDS
+db_allocated_storage    = 10 # In GB
+db_engine               = "postgres"
+db_engine_version       = "12.5"
+db_instance_class       = "db.t2.micro"
+db_username             = ""
+db_password             = ""
+db_storage_type         = "gp2"
+db_name                 = "baseapp"
+
+# Rails ENVs
+env_vars = {
+  AWS_REGION            = "us-east-1"
+}
+
+# Bastion
+ec2_ami_owner = "099720109477" # Canonical
+ec2_ami_name = "ubuntu/images/hvm-ssd/ubuntu-trusty-14.04-amd64-server-*"
+ec2_ami_virtualization_type = "hvm"
+ec2_instance_type = "t2.nano"
+ec2_public_ip_address = true

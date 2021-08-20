@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+**/.terraform/**
+*/**/.tfvars
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.pub
+.terraform.tfstate.lock.info
+terraform
+terraform_linux
